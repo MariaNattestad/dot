@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 
 # Author: Maria Nattestad
-# Email: mnattestad@dnanexus.com
+# Email: maria.nattestad@gmail.com
 
 # This script prepares a nucmer output delta file for visualization in Dot
 # Parts of this code is adapted from Assemblytics unique anchor filtering
