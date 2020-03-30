@@ -140,25 +140,20 @@
 		setInputSpec(inputSpec);
 
 		// Define some examples
+		var urlRoot = "https://storage.googleapis.com/sandbox.bio/dot",
+			urlCoords = `${urlRoot}/gorilla_to_GRCh38.coords`,
+			urlAnnotations = `${urlRoot}/gencode.v27.genes.bed`;
 		var examples = [
 			{
-				// Expires Dec 19, 2018
 				name: "Gorilla aligned to Human GRCh38",
 				hover: "Gorilla aligned to Human GRCh38",
-				urlSuffix: "?coords=https://dl.dnanex.us/F/D/y2Q4kKfvx2k7JGfG0GZJqGxvb3P68Gg7BY9PpPZz/gorilla_to_GRCh38.coords&index=https://dl.dnanex.us/F/D/672jYZ7Q50YxFzzF2XX1VzJqXqp1kvQYbXGGgbjV/gorilla_to_GRCh38.coords.idx"
+				urlSuffix: `?coords=${urlCoords}&index=${urlCoords}.idx`
 			},
 			{
-				// Expires Dec 12, 2018
 				name: "Gorilla aligned to Human GRCh38, with human gene annotation",
 				hover: "Gorilla aligned to Human GRCh38",
-				urlSuffix: "?coords=https://dl.dnanex.us/F/D/y2Q4kKfvx2k7JGfG0GZJqGxvb3P68Gg7BY9PpPZz/gorilla_to_GRCh38.coords&index=https://dl.dnanex.us/F/D/672jYZ7Q50YxFzzF2XX1VzJqXqp1kvQYbXGGgbjV/gorilla_to_GRCh38.coords.idx&annotations=https://dl.dnanex.us/F/D/XQ17P5Q8jKjq267V66Q3vB3kqXZgvgJg1PkYBBz6/gencode.v27.genes.bed"
-			},
-			{
-				// Expires Dec 19, 2018
-				name: "Tilapia aligned to Zebrafish",
-				hover: "Tilapia aligned to Zebrafish",
-				urlSuffix: "?coords=https://dl.dnanex.us/F/D/GjjBvV9QF86p0XQgVVFxJBxzXQ64X8YQ9j2zP2J2/tilapia-zebrafish_dot.coords&index=https://dl.dnanex.us/F/D/kqxgK5bJK1ffz3vGYVVQ5P83fQgK5BJ64jQ6KyzF/tilapia-zebrafish_dot.coords.idx&annotations=https://dl.dnanex.us/F/D/xq2B73JxBfjvyV0JzPk8kvJvfyb6Xkv5KP2z15Fx/Danio_rerio.GRCz10.91.bed,https://dl.dnanex.us/F/D/JVbZ8zK4VZ2P7pZvk0kZKZZGFK44ZX0Q05j8kQZQ/Oreochromis_niloticus.Orenil1.0.91.bed"
-			},
+				urlSuffix: `?coords=${urlCoords}&index=${urlCoords}.idx&annotations=${urlAnnotations}`
+			}
 		];
 
 		setExamples(examples);
