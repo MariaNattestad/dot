@@ -2,9 +2,11 @@
 
 Dot is an interactive dot plot viewer for genome-genome alignments.
 
-Dot is publicly available here: [dot.sandbox.bio](https://dot.sandbox.bio)
-And can also be used locally by cloning this repository and simply opening the index.html file in a web browser. 
+Dot has now been integrated into Assemblytics where it has become part of a serverless web app that just takes the .delta file with no need to run any python yourself:
+[Open Assemblytics](https://assemblytics.com). See [https://github.com/MariaNattestad/assemblytics](https://github.com/MariaNattestad/assemblytics) for documentation and pip install instructions if you do want to run the Python yourself.
 
+Dot is also still publicly available here: [dot.sandbox.bio](https://dot.sandbox.bio)
+And can also be used locally by cloning this repository and simply opening the index.html file in a web browser. 
 
 ## Generating the input data
 After aligning genome assemblies or finished genomes against each other with MUMmer's nucmer, the alignments can be visualized with Dot. 
